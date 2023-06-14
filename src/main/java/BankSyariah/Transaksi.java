@@ -4,16 +4,17 @@
  */
 package BankSyariah;
 
+
 /**
  *
  * @author ACER
  */
 public class Transaksi {
-  private String no_transaksi;
+    private String no_transaksi;
     private String divisi;
     private String nama;
     
-    public Transaksi(String no_transaksi, String divisi, String nama) {
+    public Transaksi(String no_transaksi, String nama) {
         this.no_transaksi = no_transaksi;
         this.divisi = divisi;
         this.nama = nama;
@@ -27,13 +28,13 @@ public class Transaksi {
         this.no_transaksi = no_transaksi;
     }
 
-    public String getDivisi() {
-        return divisi;
+    public String getdivisi() {
+        return nama;
     }
 
-    public void setDivisi(String divisi) {
+    public void setdivisi(String divisi) {
         this.divisi = divisi;
-    }
+    } 
 
     public String getNama() {
         return nama;
@@ -44,8 +45,8 @@ public class Transaksi {
     } 
     
     public void displayInfo() {
-    System.out.println("no_transaksi: " + no_transaksi);
-    System.out.println("divisi: " + divisi);
-    System.out.println("nama: " + nama);
+    System.out.println("No Transaksi : " + no_transaksi);
+    System.out.println("Nama : " + nama);
+    System.out.println("Divisi : " + divisi);
     }
 }

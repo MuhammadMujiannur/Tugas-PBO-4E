@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package BankSyariah;
-import java.util.ArrayList;
 
 /**
  *
@@ -12,12 +11,12 @@ import java.util.ArrayList;
 public class Bank_Admin {
   private String username;
     private String password;
-    private ArrayList<String>email;
+    private String email;
 
-    public Bank_Admin(String username, String password) {
+    public Bank_Admin(String username, String password, String email) {
         this.username = username;
         this.password = password;
-        email=new ArrayList<String>(); 
+        this.email = email; 
     }
 
     public void setUsername(String username) {
@@ -36,16 +35,17 @@ public class Bank_Admin {
         return password;
     }
 
-   public void insertemail(String isi){
-       this.email.add(isi);
-   }
-   
-   public ArrayList<String> getrecordemail(){
-       return this.email;
-   }
+   public void setemail(String password) {
+        this.email = email;
+    }
+
+    public String getemail() {
+        return email;
+    }
 
     public void displayInfo() {
-        System.out.println("Username: " + username);
-        System.out.println("Password: " + password);
+        System.out.println("Username : " + username);
+        System.out.println("Password : " + password);
+        System.out.println("Email : " + email);
     }
 }

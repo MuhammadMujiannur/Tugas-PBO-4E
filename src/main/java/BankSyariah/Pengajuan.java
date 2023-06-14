@@ -9,20 +9,20 @@ import java.util.ArrayList;
  * @author ACER
  */
 public class Pengajuan {
-private String no_pengajuan;
+    private String no_pengajuan;
     private String kd_perkiraan;
     private String uraian_pengajuan;
     private String tgl_pengajuan;
     private String status_pengajuan;
-    private ArrayList<String>no_admin;
+    private String no_admin;
     
-    public Pengajuan(String no_pengajuan, String kd_perkiraan, String uraian_pengajuan, String tgl_pengajuan, String status_pengajuan) {
+    public Pengajuan(String no_pengajuan, String kd_perkiraan, String uraian_pengajuan, String tgl_pengajuan, String status_pengajuan, String no_admin) {
         this.no_pengajuan = no_pengajuan;
         this.kd_perkiraan = kd_perkiraan;
         this.uraian_pengajuan = uraian_pengajuan;
         this.tgl_pengajuan = tgl_pengajuan;
         this.status_pengajuan = status_pengajuan;
-        no_admin=new ArrayList<String>();
+        this.no_admin = no_admin;
     }
     
     public String getNo_pengajuan() {
@@ -65,18 +65,19 @@ private String no_pengajuan;
         this.status_pengajuan = status_pengajuan;
     }
 
-    public void insertno_admin(String isi){
-       this.no_admin.add(isi);
-   }
-   
-   public ArrayList<String> getrecordno_admin(){
-       return this.no_admin;
-   }
+    public String getno_admin() {
+        return no_admin;
+    }
+
+    public void setno_admin(String no_admin) {
+        this.no_admin = no_admin;
+    }
      public void displayInfo() {
-    System.out.println("no_pengajuan: " + no_pengajuan);
-    System.out.println("kd_perkiraan: " + kd_perkiraan);
-    System.out.println("uraian_pengajuan: " + uraian_pengajuan);
-    System.out.println("tgl_pengajuan: " + tgl_pengajuan);
-    System.out.println("status_pengajuan: " + status_pengajuan);
+    System.out.println("No Pengajuan : " + no_pengajuan);
+    System.out.println("Kode Perkiraan : " + kd_perkiraan);
+    System.out.println("Uraian Pengajuan : " + uraian_pengajuan);
+    System.out.println("Tanggal Pengajuan : " + tgl_pengajuan);
+    System.out.println("Status Pengajuan : " + status_pengajuan);
+    System.out.println("No Admin : " + no_admin);
      }
 }

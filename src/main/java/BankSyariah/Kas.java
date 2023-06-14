@@ -14,20 +14,17 @@ public class Kas {
 private String noKredit;
     private String kodePerkiraan;
     private String uraianKredit;
-    private ArrayList<Integer> kasKredit;
+    private Integer kasKredit;
     
 
-    public Kas(String noKredit, String kodePerkiraan, String uraianKredit) {
+    public Kas(String noKredit, String kodePerkiraan, String uraianKredit, Integer kasKredit) {
         this.noKredit = noKredit;
         this.kodePerkiraan = kodePerkiraan;
         this.uraianKredit = uraianKredit;
-        kasKredit=new ArrayList<Integer>();
+        this.kasKredit = kasKredit;
        
     }
 
-    public Kas(String string, String string0, String lunas, String string1) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
     public String getNoKredit() {
         return noKredit;
@@ -53,19 +50,20 @@ private String noKredit;
         this. uraianKredit =  uraianKredit;
      }
 
-    public void insertkasKredit(Integer isi){
-        this.kasKredit.add(isi);
+    public Integer getkasKredit() {
+        return kasKredit;
     }
-
-   public ArrayList<Integer> getrecordkasKredit(){
-       return this.kasKredit;
-   }
+    
+     public void setkasKredit(Integer kasKredit) {
+        this. kasKredit =  kasKredit;
+     }
 
     public void displayInfo() {
         System.out.println("Kas Credit Information:");
-        System.out.println("No Kredit: " + noKredit);
-        System.out.println("Kode Perkiraan: " + kodePerkiraan);
-        System.out.println("Uraian Kredit: " + uraianKredit);
+        System.out.println("No Kredit : " + noKredit);
+        System.out.println("Kode Perkiraan : " + kodePerkiraan);
+        System.out.println("Uraian Kredit : " + uraianKredit);
+        System.out.println("Kas Kredit : " + kasKredit);
     }
 
    

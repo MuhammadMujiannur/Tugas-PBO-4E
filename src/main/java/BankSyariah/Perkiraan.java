@@ -9,7 +9,7 @@ package BankSyariah;
  * @author ACER
  */
 public class Perkiraan {
-  private String kd_perkiraan;
+    private String kd_perkiraan;
     private String desk_perkiraan;
     private String saldo_normal;
     
@@ -19,11 +19,11 @@ public class Perkiraan {
         this.saldo_normal = saldo_normal;
     }
     
-    public String getKd_perkiraan() {
+    public String getkd_perkiraan() {
         return kd_perkiraan;
     }
 
-    public void setKd_perkiraan(String kd_perkiraan) {
+    public void setkd_perkiraan(String kd_perkiraan) {
         this.kd_perkiraan = kd_perkiraan;
     }
 
@@ -44,9 +44,9 @@ public class Perkiraan {
     }
     
      public void displayInfo() {
-    System.out.println("kd_perkiraan: " + kd_perkiraan);
-    System.out.println("desk_perkiraan: " + desk_perkiraan);
-    System.out.println("saldo_normal: " + saldo_normal);
+    System.out.println("Desk Perkiraan : " + desk_perkiraan);
+    System.out.println("Saldo Normal : " + saldo_normal);
+    System.out.println("Kode Perkiraan : " + kd_perkiraan);
     
      }
 }
