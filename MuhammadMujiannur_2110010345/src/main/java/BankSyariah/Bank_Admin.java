@@ -16,7 +16,7 @@ public class Bank_Admin {
     public Bank_Admin(String username, String password, String email) {
         this.username = username;
         this.password = password;
-        this.email = email;
+        this.email = email; 
     }
 
     public void setUsername(String username) {
@@ -35,17 +35,17 @@ public class Bank_Admin {
         return password;
     }
 
-    public void setEmail(String email) {
+   public void setemail(String password) {
         this.email = email;
     }
 
-    public String getEmail() {
+    public String getemail() {
         return email;
     }
 
     public void displayInfo() {
-        System.out.println("Username: " + username);
-        System.out.println("Password: " + password);
-        System.out.println("Email: " + email);
+        System.out.println("Username : " + username);
+        System.out.println("Password : " + password);
+        System.out.println("Email : " + email);
     }
 }

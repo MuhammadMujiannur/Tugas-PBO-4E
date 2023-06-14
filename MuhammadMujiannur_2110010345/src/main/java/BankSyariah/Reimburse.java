@@ -3,13 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package BankSyariah;
+import java.util.ArrayList;
 
 /**
  *
  * @author ACER
  */
 public class Reimburse {
-  private String no_reimburse;
+    private Integer no_reimburse;
     private String kd_perkiraan;
     private String uraian_reimburse;
     private String biaya_reimburse;
@@ -18,7 +19,7 @@ public class Reimburse {
     private String status_reinburse;
     private String no_admin;
     
-    public Reimburse(String no_reimburse, String kd_perkiraan, String uraian_reimburse, String biaya_reimburse, String tgl_reimburse, String status_reimburse, String status_reinburse, String no_admin) {
+    public Reimburse(Integer no_reimburse, String kd_perkiraan, String uraian_reimburse, String biaya_reimburse, String tgl_reimburse, String status_reimburse, String status_reinburse, String no_admin) {
         this.no_reimburse = no_reimburse;
         this.kd_perkiraan = kd_perkiraan;
         this.uraian_reimburse = uraian_reimburse;
@@ -29,11 +30,11 @@ public class Reimburse {
         this.no_admin = no_admin;
     }
     
-    public String getNo_reimburse() {
+    public Integer getno_reimburse() {
         return no_reimburse;
     }
 
-    public void setNo_reimburse(String no_reimburse) {
+    public void setKd_perkiraan(Integer no_reimburse) {
         this.no_reimburse = no_reimburse;
     }
 
@@ -94,14 +95,14 @@ public class Reimburse {
     } 
     
      public void displayInfo() {
-    System.out.println("no_reimburse: " + no_reimburse);
-    System.out.println("kd_perkiraan: " + kd_perkiraan);
-    System.out.println("uraian_reimburse: " + uraian_reimburse);
-    System.out.println("biaya_reimburse: " + biaya_reimburse);
-    System.out.println("tgl_reimburse: " + tgl_reimburse);
-    System.out.println("status_reimburse: " + status_reimburse);
-    System.out.println("status_reimburse: " + status_reimburse);
-    System.out.println("no_admin: " + no_admin);
+    System.out.println("No Reimburse : " + no_reimburse);
+    System.out.println("Kode Perkiraan : " + kd_perkiraan);
+    System.out.println("Uraian Reimburse : " + uraian_reimburse);
+    System.out.println("Biaya Reimburse : " + biaya_reimburse);
+    System.out.println("Tanggal Reimburse : " + tgl_reimburse);
+    System.out.println("Status Reimburse : " + status_reimburse);
+    System.out.println("Status Reimburse : " + status_reimburse);
+    System.out.println("No Admin : " + no_admin);
      
      }
 }

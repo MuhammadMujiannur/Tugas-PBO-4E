@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package BankSyariah;
-
+import java.util.ArrayList;
 
 
 /**
@@ -14,16 +14,17 @@ public class Kas {
 private String noKredit;
     private String kodePerkiraan;
     private String uraianKredit;
-    private int kasKredit;
+    private Integer kasKredit;
     
 
-    public Kas(String noKredit, String kodePerkiraan, String uraianKredit, int kasKredit) {
+    public Kas(String noKredit, String kodePerkiraan, String uraianKredit, Integer kasKredit) {
         this.noKredit = noKredit;
         this.kodePerkiraan = kodePerkiraan;
         this.uraianKredit = uraianKredit;
         this.kasKredit = kasKredit;
        
     }
+
 
     public String getNoKredit() {
         return noKredit;
@@ -49,22 +50,20 @@ private String noKredit;
         this. uraianKredit =  uraianKredit;
      }
 
-    public int getKasKredit() {
+    public Integer getkasKredit() {
         return kasKredit;
     }
     
-    public void setKasKredit(int kasKredit) {
-        this.kasKredit =  kasKredit;
+     public void setkasKredit(Integer kasKredit) {
+        this. kasKredit =  kasKredit;
      }
-
-   
 
     public void displayInfo() {
         System.out.println("Kas Credit Information:");
-        System.out.println("No Kredit: " + noKredit);
-        System.out.println("Kode Perkiraan: " + kodePerkiraan);
-        System.out.println("Uraian Kredit: " + uraianKredit);
-        System.out.println("Kas Kredit: " + kasKredit);
+        System.out.println("No Kredit : " + noKredit);
+        System.out.println("Kode Perkiraan : " + kodePerkiraan);
+        System.out.println("Uraian Kredit : " + uraianKredit);
+        System.out.println("Kas Kredit : " + kasKredit);
     }
 
    

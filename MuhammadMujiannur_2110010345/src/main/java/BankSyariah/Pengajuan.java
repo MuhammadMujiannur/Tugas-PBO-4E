@@ -3,13 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package BankSyariah;
-
+import java.util.ArrayList;
 /**
  *
  * @author ACER
  */
 public class Pengajuan {
-private String no_pengajuan;
+    private String no_pengajuan;
     private String kd_perkiraan;
     private String uraian_pengajuan;
     private String tgl_pengajuan;
@@ -65,20 +65,19 @@ private String no_pengajuan;
         this.status_pengajuan = status_pengajuan;
     }
 
-    public String getNo_admin() {
+    public String getno_admin() {
         return no_admin;
     }
 
-    public void setNo_admin(String no_admin) {
+    public void setno_admin(String no_admin) {
         this.no_admin = no_admin;
     }
-    
      public void displayInfo() {
-    System.out.println("no_pengajuan: " + no_pengajuan);
-    System.out.println("kd_perkiraan: " + kd_perkiraan);
-    System.out.println("uraian_pengajuan: " + uraian_pengajuan);
-    System.out.println("tgl_pengajuan: " + tgl_pengajuan);
-    System.out.println("status_pengajuan: " + status_pengajuan);
-    System.out.println("no_admin: " + no_admin);
+    System.out.println("No Pengajuan : " + no_pengajuan);
+    System.out.println("Kode Perkiraan : " + kd_perkiraan);
+    System.out.println("Uraian Pengajuan : " + uraian_pengajuan);
+    System.out.println("Tanggal Pengajuan : " + tgl_pengajuan);
+    System.out.println("Status Pengajuan : " + status_pengajuan);
+    System.out.println("No Admin : " + no_admin);
      }
 }
